@@ -1,13 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+      <aside-menu>
+      </aside-menu>
 </template>
+<script>
+  import AsideMenu from '@/components/AsideMenu.vue'
 
+  export default {
+    name: 'aside',
+    components: {
+      AsideMenu
+    }
+  }
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
